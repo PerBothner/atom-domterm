@@ -1,16 +1,16 @@
 {
   "name": "atom-domterm",
   "main": "./lib/domterm",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "terminal emulator with graphics and session management",
   "keywords": [
-        "terminal", "domterm"
+    "terminal",
+    "domterm"
   ],
   "repository": "https://github.com/PerBothner/atom-domterm",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
