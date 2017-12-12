@@ -36,19 +36,19 @@ module.exports = Domterm =
     #else
     #  @modalPanel.show()
 
-  createTermView: (forkPTY=true, rows=30, cols=80, title='tty') ->
+  createTermView: (options=null) ->
     console.log 'Domterm createTermView called!'
-    dmv = new DomtermView(null)
+    dmv = new DomtermView(options)
     dmv.domterm = this
     return dmv
 
-  splitTerm: (direction) ->
+  splitTerm: (direction, options=null) ->
     console.log 'Domterm splitTerm '+direction+' called!'
     if direction=='tab'
-       atom.workspace.open(@createTermView())
+       atom.workspace.open(@createTermView(options))
        return
     openPanesInSameSplit = atom.config.get 'domterm.openPanesInSameSplit'
-    termView = @createTermView()
+    termView = @createTermView(options)
     direction = capitalize direction
 
     splitter = =>
