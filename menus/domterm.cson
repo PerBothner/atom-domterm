@@ -1,9 +1,29 @@
 # See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
 'context-menu':
-  'atom-domterm': [
+  'webview': [
     {
       'label': 'Toggle domterm'
       'command': 'domterm:toggle'
+    }
+    {
+      'label': 'Open New terminal in New Tab'
+      'command': 'domterm:open'
+    }
+    {
+          'label': 'Open New Terminal in Right Pane'
+          'command': 'domterm:open-split-right'
+    }
+    {
+          'label': 'Open New Terminal in Bottom Pane'
+          'command': 'domterm:open-split-down'
+    }
+    {
+          'label': 'Open New Terminal in Top Pane'
+          'command': 'domterm:open-split-up'
+    }
+    {
+          'label': 'Open New Terminal in Left Pane'
+          'command': 'domterm:open-split-left'
     }
   ]
 'menu': [
@@ -13,18 +33,10 @@
       'label': 'DomTerm'
       'submenu': [
         {
-          'label': 'Toggle'
-          'command': 'domterm:toggle'
-        },
-        {
           'label': 'Open New terminal in New Tab'
-          'command': 'domterm:open'
-        },
-         {
-          'label': 'Open New terminal View in New Tab'
           'command': 'domterm:openview'
         },
-       {
+        {
           'label': 'Open New Terminal in Right Pane'
           'command': 'domterm:open-split-right'
         },

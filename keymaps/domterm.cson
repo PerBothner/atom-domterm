@@ -7,9 +7,13 @@
 
 # For more detailed documentation see
 # https://atom.io/docs/latest/behind-atom-keymaps-in-depth
-'atom-workspace':
-  'ctrl-alt-o': 'domterm:toggle'
+#'atom-workspace':
+#  'ctrl-alt-o': 'domterm:toggle'
 
+# The follow are only relevant when usingWebview is true.
+# Otherwise (when using an iframe) we get native bindings by default.
+# Note this is quite incomplete.  It would be nice to use
+# "native-key-bindings" but I can't get that to work.
 '.domterm':
   'ctrl-b': 'native!'
   'ctrl-f': 'native!'

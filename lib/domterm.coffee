@@ -18,8 +18,6 @@ module.exports = Domterm =
 
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'domterm:toggle': => @toggle()
-    @subscriptions.add atom.commands.add 'atom-workspace', 'domterm:open', ->
-      atom.workspace.open(@viewURI)
     @subscriptions.add atom.commands.add 'atom-workspace', 'domterm:openview', ->
       atom.workspace.open(new DomtermView(state.domtermViewState))
     ['up', 'right', 'down', 'left'].forEach (direction) =>
@@ -40,10 +38,15 @@ module.exports = Domterm =
 
   createTermView: (forkPTY=true, rows=30, cols=80, title='tty') ->
     console.log 'Domterm createTermView called!'
-    new DomtermView(null)
+    dmv = new DomtermView(null)
+    dmv.domterm = this
+    return dmv
 
   splitTerm: (direction) ->
-    console.log 'Domterm splitTerm called!'
+    console.log 'Domterm splitTerm '+direction+' called!'
+    if direction=='tab'
+       atom.workspace.open(@createTermView())
+       return
     openPanesInSameSplit = atom.config.get 'domterm.openPanesInSameSplit'
     termView = @createTermView()
     direction = capitalize direction
