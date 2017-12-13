@@ -26,8 +26,8 @@ The atom-domterm package is unpolished.  It has only been tested on
 Fedora 27.  The terminal emulator part is pretty solid, and supports
 mouse handling, 24-bit colors, wide characters, and more.  You can
 create multiple panes, and drag them with the mouse.  However,
-integration with Atom is limited.  The DomTerm multi-pane
-functionality has not been integrated with Atom.  And so on.
+integration with Atom is limited, and there are glitches, especially
+when it comes to pane managent.
 
 ## Features
 
@@ -37,7 +37,7 @@ functionality has not been integrated with Atom.  And so on.
   Good Unicode support, including wide characters.
 * Remembers tab characters and distingishes explict new-line from line-wrap.
   So you can `cat` a `Makefile`, and then copy-and-paste it.
-  Lines as re-wrapped on terminal re-size.
+  Lines are re-wrapped on terminal re-size.
 * You can "print" graphics or general HTML.
   This makes domterm suitable as a "graphing calculator".    For example
   Gnuplot can [display graph output inline](http://per.bothner.com/blog/2016/gnuplot-in-domterm/).
@@ -45,5 +45,5 @@ functionality has not been integrated with Atom.  And so on.
   Many other possibilities.
 * The basic "session management" functionality of `tmux` or GNU Screen:
   You can detach and re-attach session. (Not yet integrated into atom-domterm.)
-* Builtin optional line-editor (like a simplified `readlne`).
+* Builtin optional line-editor (like a simplified `readline`).
 * Builtin optional pager (like a simplified `less`).
