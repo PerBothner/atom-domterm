@@ -13,7 +13,7 @@
 # The follow are only relevant when usingWebview is true.
 # Otherwise (when using an iframe) we get native bindings by default.
 # Note this is quite incomplete.  It would be nice to use
-# "native-key-bindings" but I can't get that to work.
+# "native-key-bindings" but that doesn't seem to work for webview.
 '.domterm':
   'ctrl-b': 'native!'
   'ctrl-f': 'native!'
@@ -22,3 +22,5 @@
   'delete': 'native!'
   'ctrl-shift-pageup': 'native!'
   'ctrl-shift-pagedown': 'native!'
+  'ctrl-shift-a': 'native!'
+  'ctrl-shift-i': 'native!'
