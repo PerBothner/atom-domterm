@@ -23,4 +23,5 @@
   'ctrl-shift-pageup': 'native!'
   'ctrl-shift-pagedown': 'native!'
   'ctrl-shift-a': 'native!'
-  'ctrl-shift-i': 'native!'
+
+#'ctrl-shift-i': 'native!'

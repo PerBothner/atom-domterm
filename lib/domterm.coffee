@@ -3,6 +3,7 @@ DomtermView = require './domterm-view'
 
 capitalize = (str)-> str[0].toUpperCase() + str[1..].toLowerCase()
 
+# FIXME rename to DomTermManager (?) to avoid confusion.
 module.exports = Domterm =
   domtermView: null
   modalPanel: null
