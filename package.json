@@ -18,5 +18,7 @@
   "deserializers": {
     "DomTermView": "createTermView"
   },
-  "dependencies": {}
+  "dependencies": {
+    "event-kit": "^2.3.0"
+  }
 }
