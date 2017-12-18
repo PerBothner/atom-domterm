@@ -25,3 +25,21 @@ To try direct emedding, do the following:
 
 - In `lib/domterm-view.js` change `usingDirectDM` to true.
 
+## Avoiding need for domterm executable
+
+Delegating process management to the stand-alone domterm executable
+simplifies atom-domterm a lot, but it does complicate installation
+and distribution.  Could we bundle domterm as a (native) npm module?
+
+Alternatively, instead of the domterm server, one could use
+a node.js pty library (node-pty), and talk to that directly.
+This approach would probably use the "direct embedding" model
+discussed above.
+
+Some features of domterm (such as detachable sessions)
+would probably not be reproduced.  The domterm command also
+does useful things, such as "printing" pictures.
+
+Ideally, atom-domterm could work both ways, depending on
+the configuration: If the domterm command is in the path
+we use that; otherwise we use a simple pty shim.
