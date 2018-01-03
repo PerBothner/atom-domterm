@@ -2,7 +2,7 @@
 an Atom package for the DomTerm terminal emulator
 
 DomTerm is a terminal emulator/multiplexer with lots of
-nice features, most notably you can embed graphics/html,
+nice features. Most notably you can embed graphics/html,
 and session management is included.
 See http://domterm.org for more about DomTerm.
 
@@ -22,12 +22,9 @@ Note there is already an Electron wrapper for DomTerm, which
 works very well.  That is included in the DomTerm sources,
 and is the default user interface for DomTerm.
 
-The atom-domterm package is unpolished.  It has only been tested on
-Fedora 27.  The terminal emulator part is pretty solid, and supports
-mouse handling, 24-bit colors, wide characters, and more.  You can
-create multiple panes, and drag them with the mouse.  However,
-integration with Atom is limited, and there are glitches, especially
-when it comes to pane managent.
+The atom-domterm has only been tested on Fedora 27.
+Most functionality works pretty well, though more testing
+is needed, and integration with Atom is limited can be improved.
 
 ## Features
 
@@ -47,3 +44,5 @@ when it comes to pane managent.
   You can detach and re-attach session. (Not yet integrated into atom-domterm.)
 * Builtin optional line-editor (like a simplified `readline`).
 * Builtin optional pager (like a simplified `less`).
+* Error message from many compilers are turned into clickable links.
+  Link behavior can be customized; the default creates a text editor item.
