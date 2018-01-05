@@ -1,7 +1,7 @@
 {
   "name": "atom-domterm",
   "main": "./lib/domterm",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "terminal emulator with graphics and session management",
   "keywords": [
     "terminal",
@@ -13,7 +13,11 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "consumedServices": {
-      "status-bar": { "versions": { "^1.0.0": "consumeStatusBar" } }
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
   },
   "deserializers": {
     "DomTermView": "createTermView"
