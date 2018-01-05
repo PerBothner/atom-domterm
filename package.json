@@ -1,7 +1,7 @@
 {
   "name": "atom-domterm",
   "main": "./lib/domterm",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "terminal emulator with graphics and session management",
   "keywords": [
     "terminal",
