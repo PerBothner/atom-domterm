@@ -38,11 +38,11 @@ is needed.
   plus "compile" and "run" (in an inactive tab).
   The "window title" of the active terminal is displayed both
   in the message area and in the main title bar.
-* Output can have clickable links, including line+column information,
-  from compilers and similar programs.  The `compile` pane of the
-  screenshot show the effect of mouse hover over the warning -
-  note the corresponding file URL in the message area.
-  Clicking on the link is customizable - the default opens an atom editor.
+* Error message from many compilers are turned into clickable links.
+  The `compile` pane of the screenshot show the effect of mouse hover
+  over the warning - note the corresponding file URL in the message area.
+  Clicking on the link is customizable - the default opens an atom
+  editor tab positioned at the corresponding line.
 * You can "print" graphics or general HTML.
   This makes domterm suitable as a "graphing calculator".
   The screenshot show an image "printed" by the `domterm imgcat` command.
@@ -56,5 +56,3 @@ is needed.
   You can detach and re-attach session.
 * Builtin optional line-editor (like a simplified `readline`).
 * Builtin optional pager (like a simplified `less`).
-* Error message from many compilers are turned into clickable links.
-  Link behavior can be customized; the default creates a text editor item.
