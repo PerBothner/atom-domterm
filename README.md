@@ -1,6 +1,8 @@
 # atom-domterm
 an Atom package for the DomTerm terminal emulator
 
+![screenshot](screenshot1.png)
+
 DomTerm is a terminal emulator/multiplexer with lots of
 nice features. Most notably you can embed graphics/html,
 and session management is included.
