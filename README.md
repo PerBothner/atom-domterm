@@ -49,6 +49,9 @@ is needed.
   Gnuplot can [display graph output inline](http://per.bothner.com/blog/2016/gnuplot-in-domterm/).
   You can have the `man` command print HTML to the console.
   Many other possibilities.
+* You can style the terminal using CSS.  This is usually done in
+  `~/.domterm/settings.ini`, which is automatically reloaded when saved.
+  The screenshot shows how you can set terminal-specific background colors.
 * Remembers tab characters and distingishes explict new-line from line-wrap.
   So you can `cat` a `Makefile`, and then copy-and-paste it.
   Lines are re-wrapped on terminal re-size.
